@@ -21,7 +21,7 @@ app.post('/google-home-notifier', urlencodedParser, function (req, res) {
      ip = req.query.ip;
   }
 
-  var language = 'pl'; // default language code
+  var language = 'ja'; // default language code
   if (req.query.language) {
     language;
   }
@@ -63,7 +63,7 @@ app.get('/google-home-notifier', function (req, res) {
      ip = req.query.ip;
   }
 
-  var language = 'pl'; // default language code
+  var language = 'ja'; // default language code
   if (req.query.language) {
     language;
   }

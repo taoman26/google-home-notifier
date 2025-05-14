@@ -1,5 +1,6 @@
 # google-home-notifier
 Send notifications to Google Home
+- This repository is a fork of noelportugal's google-home-notifier, with Pull Request #55 applied and the default language in example.js set to Japanese. While noelportugal's original source uses google-tts-api version 0.0.2, this version uses 2.0.2. Please note that as of May 2025, google-tts-api version 0.0.2 cannot be used for speech on Google Home/Nest devices.
 
 #### Installation
 ```sh
@@ -9,13 +10,13 @@ $ npm install google-home-notifier
 #### Usage
 ```javascript
 var googlehome = require('google-home-notifier');
-var language = 'pl'; // if not set 'us' language will be used
+var language = 'ja'; // if not set 'us' language will be used
 
 googlehome.device('Google Home', language); // Change to your Google Home name
 // or if you know your Google Home IP
 // googlehome.ip('192.168.1.20', language);
 
-googlehome.notify('Hey Foo', function(res) {
+googlehome.notify('こんにちは', function(res) {
   console.log(res);
 });
 ```
